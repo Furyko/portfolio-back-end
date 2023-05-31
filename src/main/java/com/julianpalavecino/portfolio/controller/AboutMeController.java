@@ -29,12 +29,12 @@ public class AboutMeController {
         return aboutMeService.getById(idAboutMe);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     public AboutMe updateAboutMe(@RequestBody AboutMe aboutMe) {
         return this.aboutMeService.modifyAboutMe(aboutMe);
     }
 
-    @PostMapping(value = "/{idAboutMe}")
+    @DeleteMapping(value = "/{idAboutMe}")
     public Boolean deleteAboutMe(@PathVariable(value="idAboutMe") Long idAboutMe) {
         return this.aboutMeService.deleteAboutMe(idAboutMe);
     }
