@@ -34,6 +34,7 @@ public class AboutMeServiceImpl implements AboutMeService {
             foundAboutMe.get().setFullname(aboutMe.getFullname());
             foundAboutMe.get().setPresentation(aboutMe.getPresentation());
             foundAboutMe.get().setProfession(aboutMe.getProfession());
+            foundAboutMe.get().setProfilePhoto(aboutMe.getProfilePhoto());
             return this.newAboutMe(foundAboutMe.get());
         }
         return null;
