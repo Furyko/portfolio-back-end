@@ -19,6 +19,9 @@ public class AboutMe {
     @Column
     private String presentation;
 
+    @Column
+    private String profilePhoto;
+
     public Long getIdAboutMe() {
         return idAboutMe;
     }
@@ -49,5 +52,13 @@ public class AboutMe {
 
     public void setPresentation(String presentation) {
         this.presentation = presentation;
+    }
+
+    public String getProfilePhoto() {
+        return profilePhoto;
+    }
+
+    public void setProfilePhoto(String profilePhoto) {
+        this.profilePhoto = profilePhoto;
     }
 }

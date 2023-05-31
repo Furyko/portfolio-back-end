@@ -5,6 +5,8 @@ import com.julianpalavecino.portfolio.service.AboutMeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/about-me")
 @CrossOrigin(origins = {"http://localhost:4200", "http://localhost:8080"})
@@ -20,6 +22,11 @@ public class AboutMeController {
     @GetMapping("/all")
     public Iterable<AboutMe> getAll() {
         return aboutMeService.getAll();
+    }
+
+    @GetMapping("/{idAboutMe}")
+    public Optional<AboutMe> getById(@PathVariable(value="idAboutMe") Long idAboutMe) {
+        return aboutMeService.getById(idAboutMe);
     }
 
     @PostMapping("/update")

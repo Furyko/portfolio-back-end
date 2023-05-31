@@ -23,6 +23,11 @@ public class AboutMeServiceImpl implements AboutMeService {
     }
 
     @Override
+    public Optional<AboutMe> getById(Long idAboutMe) {
+        return this.aboutMeRepository.findById(idAboutMe);
+    }
+
+    @Override
     public AboutMe modifyAboutMe(AboutMe aboutMe) {
         Optional<AboutMe> foundAboutMe = this.aboutMeRepository.findById(aboutMe.getIdAboutMe());
         if (foundAboutMe.get() != null) {
