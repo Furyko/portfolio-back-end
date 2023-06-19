@@ -25,6 +25,7 @@ com\julianpalavecino\portfolio\repository\ProjectRepository.class
 com\julianpalavecino\portfolio\service\AboutMeService.class
 com\julianpalavecino\portfolio\repository\KnowledgeRepository.class
 com\julianpalavecino\portfolio\repository\AboutMeRepository.class
+com\julianpalavecino\portfolio\controller\MainController.class
 com\julianpalavecino\portfolio\controller\ExperienceController.class
 com\julianpalavecino\portfolio\entity\ExtraProject.class
 com\julianpalavecino\portfolio\entity\Study.class
